@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WebForge | Professional Websites for Your Business</title>
+
+<meta name="description"
+content="WebForge creates professional, modern and responsive websites for businesses. Choose your industry and get your business online.">
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07101b;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+    --blue: #08aef5;
+    --blue-dark: #087db3;
+    --dark: #07101b;
+    --dark-2: #0c1826;
+    --dark-3: #122235;
+    --white: #ffffff;
+    --text: #c3cfdd;
+    --muted: #8493a5;
+    --border: #26384c;
+    --green: #25d366;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.logo-symbol {
+    font-size: 30px;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo-text span {
+    color: var(--blue);
+}
+
+.logo small {
+    display: block;
+    color: #9aa9ba;
+    font-size: 8px;
+    letter-spacing: .5px;
+    font-weight: normal;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e5edf6;
+    font-size: 14px;
+    transition: .25s;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.quote-button {
+    padding: 11px 20px;
+    background: var(--blue);
+    color: white;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 690px;
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 10, 19, .97) 0%,
+            rgba(3, 10, 19, .88) 42%,
+            rgba(3, 10, 19, .45) 75%,
+            rgba(3, 10, 19, .72) 100%
+        ),
+        url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1800&q=90")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    padding: 120px 25px 70px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.hero-description {
+    color: #b9c7d6;
+    font-size: 17px;
+    max-width: 600px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 23px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.btn-blue {
+    background: var(--blue);
+    color: white;
+}
+
+.btn
